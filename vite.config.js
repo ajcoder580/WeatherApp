@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
-    port: 3000, // Optional: You can use any port or let Render assign it
+    port: 3000,
+    allowedHosts: ['weatherapp-ql4d.onrender.com'], // ✅ Add this line
   },
 })
